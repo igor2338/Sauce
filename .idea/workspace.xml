@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e8aaa67-26b1-4e96-ae3b-8e01d290b7de" name="Changes" comment="Begin">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ProductsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/ProductsTest.java" afterDir="false" />
+    <list default="true" id="6e8aaa67-26b1-4e96-ae3b-8e01d290b7de" name="Changes" comment="AFT01-3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ProductsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ProductsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,14 +24,14 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="AFT01-3" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2pPyQBPdXeweEv5TAZhKmhZxjZc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -51,8 +45,12 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.LoginTest.correctLogin.executor": "Run",
     "TestNG.LoginTest.emptyPasswordInputCheck.executor": "Run",
+    "TestNG.LoginTest.emptyUserEmptyPasswordCheck.executor": "Run",
+    "TestNG.LoginTest.lockedOutUserLoginCheck.executor": "Run",
+    "TestNG.LoginTest.problemUserLoginEmptyPasswordCheck.executor": "Run",
     "TestNG.ProductsTest.addGoods.executor": "Run",
-    "git-widget-placeholder": "AFT01-3",
+    "TestNG.ProductsTest.removeCheck.executor": "Run",
+    "git-widget-placeholder": "AFT01-3-DZ",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
@@ -61,8 +59,8 @@
       <recent name="tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTest.correctLogin">
-    <configuration name="LoginTest.correctLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.ProductsTest.removeCheck">
+    <configuration name="LoginTest.emptyUserEmptyPasswordCheck" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Sauce" />
       <extension name="coverage">
         <pattern>
@@ -72,7 +70,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
-      <option name="METHOD_NAME" value="correctLogin" />
+      <option name="METHOD_NAME" value="emptyUserEmptyPasswordCheck" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -80,7 +78,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.emptyPasswordInputCheck" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest.lockedOutUserLoginCheck" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Sauce" />
       <extension name="coverage">
         <pattern>
@@ -90,7 +88,25 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
-      <option name="METHOD_NAME" value="emptyPasswordInputCheck" />
+      <option name="METHOD_NAME" value="lockedOutUserLoginCheck" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.problemUserLoginEmptyPasswordCheck" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Sauce" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
+      <option name="METHOD_NAME" value="problemUserLoginEmptyPasswordCheck" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -116,11 +132,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProductsTest.removeCheck" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Sauce" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ProductsTest" />
+      <option name="METHOD_NAME" value="removeCheck" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginTest.correctLogin" />
+        <item itemvalue="TestNG.ProductsTest.removeCheck" />
         <item itemvalue="TestNG.ProductsTest.addGoods" />
-        <item itemvalue="TestNG.LoginTest.emptyPasswordInputCheck" />
+        <item itemvalue="TestNG.LoginTest.emptyUserEmptyPasswordCheck" />
+        <item itemvalue="TestNG.LoginTest.problemUserLoginEmptyPasswordCheck" />
+        <item itemvalue="TestNG.LoginTest.lockedOutUserLoginCheck" />
       </list>
     </recent_temporary>
   </component>
@@ -156,11 +192,31 @@
       <option name="project" value="LOCAL" />
       <updated>1732682119354</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="AFT01-3">
+      <option name="closed" value="true" />
+      <created>1732708767336</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732708767337</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Begin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Begin" />
+    <MESSAGE value="AFT01-3" />
+    <option name="LAST_COMMIT_MESSAGE" value="AFT01-3" />
   </component>
 </project>
